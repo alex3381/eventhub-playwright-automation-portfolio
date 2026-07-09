@@ -1,0 +1,21 @@
+{
+  "name": "eventhub-playwright-automation-portfolio",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "End-to-end Playwright automation tests for event creation, booking, seat validation, refund eligibility, screenshots, and video evidence.",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed --workers=1",
+    "test:portfolio": "playwright test Eventhub_project.spec.js --workers=1",
+    "test:portfolio:headed": "playwright test Eventhub_project.spec.js --headed --workers=1",
+    "test:create-event": "playwright test Eventhub_project.spec.js --grep \"Create event\" --headed --workers=1",
+    "test:single-refund": "playwright test Eventhub_project.spec.js --grep \"Single-ticket\" --headed --workers=1",
+    "test:group-refund": "playwright test Eventhub_project.spec.js --grep \"Three-ticket\" --headed --workers=1",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.61.1",
+    "dotenv": "17.4.2"
+  }
+}
