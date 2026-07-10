@@ -10,6 +10,14 @@ An end-to-end test automation project built with **Playwright** and **JavaScript
 
 This project demonstrates how automated browser tests can validate a complete customer journey across an event-booking application while producing visual evidence suitable for a QA portfolio.
 
+## Video evidence
+
+| Automated scenario | What the test validates | Recording |
+|---|---|---|
+| Event creation and booking | Creates a conference event, books one ticket, verifies the booking and confirms the seat count decreases | [Watch video](docs/videos/01-event-creation-seat-validation.webm) |
+| Single-ticket refund | Confirms that a single-ticket booking qualifies for a full refund | [Watch video](docs/videos/02-single-ticket-refund.webm) |
+| Group-booking refund | Confirms that a three-ticket group booking is non-refundable | [Watch video](docs/videos/03-group-booking-refund.webm) |
+
 ## Automated scenarios
 
 ### 1. Event creation, booking and seat inventory
@@ -207,5 +215,5 @@ The event banner uses **“OMR19 Conference Stage”**, uploaded by Isame90 and 
 
 ## Author
 
-**Alex Olu**  
+**Alex Fatogun**  
 Junior Software Tester building practical experience in manual testing, JavaScript and Playwright automation.
